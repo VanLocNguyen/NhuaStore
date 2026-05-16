@@ -144,8 +144,8 @@ const products = [
         id: "astray-red-frame-kai",
         name: "PG 1/60 Gundam Astray Red Frame Kai",
         category: "pg",
-        thumbnail: "PG 1-60 Gundam Astray Red Frame Kai.jpg",
-        images: ["PG 1-60 Gundam Astray Red Frame Kai.jpg", "PG 1-60 Gundam Astray Red Frame Kai (2).jpg", "PG 1-60 Gundam Astray Red Frame Kai (3).jpg"],
+        thumbnail: "PG 1-60 GUNDAM ASTRAY RED FRAME KAI.jpg",
+        images: ["PG 1-60 GUNDAM ASTRAY RED FRAME KAI.jpg", "PG 1-60 GUNDAM ASTRAY RED FRAME KAI (2).jpg", "PG 1-60 GUNDAM ASTRAY RED FRAME KAI (3).jpg"],
         price: 6500000,
         desc: "Mẫu Perfect Grade trang bị hai thanh katana Gerbera Straight và Tiger Pierce."
     },
@@ -162,8 +162,8 @@ const products = [
         id: "strike-gundam-pg",
         name: "PG 1/60 Strike Gundam",
         category: "pg",
-        thumbnail: "PG 1-60 Strike Gundam.jpg",
-        images: ["PG 1-60 Strike Gundam.jpg", "PG 1-60 Strike Gundam (2).jpg", "PG 1-60 Strike Gundam (3).jpg"],
+        thumbnail: "PG 1-60 STRIKE GUNDAM.jpg",
+        images: ["PG 1-60 STRIKE GUNDAM.jpg", "PG 1-60 STRIKE GUNDAM (2).jpg", "PG 1-60 STRIKE GUNDAM (3).jpg"],
         price: 6000000,
         desc: "Mẫu Perfect Grade Strike Gundam với khung xương cực kỳ chi tiết."
     },
