@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3a638">
+    <title>Sản Phẩm - Nhựa Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="header-middle border-bottom">
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.jpg" alt="Nhựa Store" class="img-fluid" style="max-height: 65px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-12 order-lg-2 order-3 mt-lg-0 mt-3">
+                        <form onsubmit="return false;" class="frm-search">
+                            <div class="search-bar d-flex border border-warning rounded overflow-hidden" style="position:relative;">
+                                <div class="search-wrapper position-relative flex-grow-1">
+                                    <input 
+                                        class="search form-control border-0 shadow-none h-100" 
+                                        type="text" 
+                                        id="search-input"
+                                        placeholder="Tìm kiếm mẫu Gundam, Figure..." 
+                                        autocomplete="off"
+                                    />
+                                    <div class="search-suggestions" id="search-suggestions"></div>
+                                </div>
+                                <button type="submit" id="search-btn" class="btn btn-warning rounded-0 px-4 text-white">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-6 order-lg-3 order-2">
+                        <div class="header-middle-right d-flex justify-content-end align-items-center">
+                            <div class="hotline-box d-none d-xl-flex me-4">
+                                <i class="bi bi-telephone-fill me-2 text-warning fs-4"></i>
+                                <span class="small">Hotline<br><b>0912 345 678</b></span>
+                            </div>
+                            <div class="cart-info position-relative">
+                                <a href="giohang.html" class="cart d-flex align-items-center text-decoration-none text-dark">
+                                    <div class="cart-icon me-2 position-relative">
+                                        <span class="cart-count badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle" style="font-size: 0.7rem;">0</span>
+                                        <i class="bi bi-cart3 text-warning" style="font-size: 1.8rem;"></i>
+                                    </div>
+                                    <span class="cart-title d-none d-sm-inline fw-bold">Giỏ hàng</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom bg-white shadow-sm">
+            <div class="container">
+                <div class="nav-menu d-flex align-items-center">
+                    <div class="categories position-relative" id="categories-dropdown">
+                        <div class="categories-menu bg-dark text-white p-3 cursor-pointer" style="min-width: 250px;">
+                            <i class="bi bi-list"></i> <span class="ms-2 fw-bold">DANH MỤC SẢN PHẨM</span>
+                        </div>
+                        <ul class="dropdown-category-list list-unstyled m-0 shadow border-top border-warning border-3 position-absolute w-100 bg-white" style="z-index: 1000; display: none;">
+                            <li><a href="sanpham.html?cat=eg" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>Entry Grade (EG)</a></li>
+                            <li><a href="sanpham.html?cat=hg" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>High Grade (HG)</a></li>
+                            <li><a href="sanpham.html?cat=rg" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>Real Grade (RG)</a></li>
+                            <li><a href="sanpham.html?cat=mg" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>Master Grade (MG)</a></li>
+                            <li><a href="sanpham.html?cat=pg" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>Perfect Grade (PG)</a></li>
+                            <li><a href="sanpham.html?cat=sd" class="d-block p-2 px-3 text-decoration-none text-dark border-bottom"><i class="bi bi-chevron-right me-2 text-warning"></i>SD / BB Senshi</a></li>
+                            <li><a href="sanpham.html?cat=tool" class="d-block p-2 px-3 text-decoration-none text-dark"><i class="bi bi-chevron-right me-2 text-warning"></i>Dụng cụ & Phụ kiện</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="menu d-flex list-unstyled m-0 ms-4">
+                        <li class="menu-item mx-3"><a href="index.html" class="text-decoration-none fw-bold text-dark hover-warning">TRANG CHỦ</a></li>
+                        <li class="menu-item mx-3"><a href="sanpham.html" class="text-decoration-none fw-bold text-warning border-bottom border-warning border-3 pb-2">SẢN PHẨM</a></li>
+                        <li class="menu-item mx-3"><a href="lienhe.html" class="text-decoration-none fw-bold text-dark hover-warning">LIÊN HỆ</a></li>
+                        <li class="menu-item mx-3"><a href="labthuchanh.html" class="text-decoration-none fw-bold text-dark hover-warning">LAB THỰC HÀNH</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="box-title mb-5">
+
+                <h3 class="fw-bold border-start border-5 border-warning ps-3">
+                    TẤT CẢ SẢN PHẨM
+                </h3>
+
+            </div>
+
+            <div id="product-list" class="row g-4"></div>
+
+        </div>
+
+    </main>
+    
+
+    <footer class="bg-dark text-white mt-5 pt-5 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="bg-warning text-dark d-inline-block px-3 py-2 mb-3 rounded fw-bold fs-4 shadow">
+                        NHỰA STORE
+                    </div>
+                    <p class="text-secondary small pe-4">Chuyên cung cấp mô hình Gundam & Figure chính hãng chất lượng cao. Đảm bảo uy tín, đóng gói cẩn thận, giao hàng nhanh chóng.</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold text-warning mb-3">THÔNG TIN LIÊN HỆ</h5>
+                    <p class="mb-2 small"><i class="bi bi-geo-alt me-2 text-warning"></i> 180 Cao Lỗ, Phường 4, Quận 8, TP.HCM</p>
+                    <p class="mb-2 small"><i class="bi bi-envelope me-2 text-warning"></i> DH52301005@student.stu.edu.vn</p>
+                    <p class="mb-2 small"><i class="bi bi-telephone me-2 text-warning"></i> 0912 345 678</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="rounded overflow-hidden border border-secondary shadow-sm" style="height: 180px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.954415492358!2d106.6778321!3d10.7380024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5db3%3A0xbdc424515961ed59!2zMTgwIENhbyBM4buXLCBQaMaw4budbmcgNCwgUXXhuq1uIDgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700000000000" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid border-top border-secondary py-3 mt-4 bg-black">
+            <div class="text-center small text-secondary">
+                Sinh viên: <span class="text-white fw-bold">NGUYỄN VĂN LỘC</span> | MSSV: <span class="text-white fw-bold">DH52301005</span> | Lớp: <span class="text-white fw-bold">D23_TH02</span> | Nhóm 06
+            </div>
+        </div>
+    </footer>
+
+    <button class="btn btn-warning rounded-circle position-fixed shadow-lg" style="bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 1000; color: white;" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="bi bi-arrow-up fs-4"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Carousel Banner
+            $(".banner-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                nav: false,
+                dots: true,
+                animateOut: 'fadeOut'
+            });
+
+            // Hiệu ứng hover danh mục
+            $('#categories-dropdown').hover(
+                function() { $(this).find('.dropdown-category-list').stop(true, true).slideDown(200); },
+                function() { $(this).find('.dropdown-category-list').stop(true, true).slideUp(200); }
+            );
+        });
+    </script>
+</body>
+</html>
